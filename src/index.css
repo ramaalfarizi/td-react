@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: "Inter", sans-serif;
+  }
+  /* h1,
+    h2 {
+        font-family: "Playfair Display", serif;
+    }
+    p {
+        font-family: "Inter", sans-serif;
+    } */
+
+  /* Heading */
+  h1 {
+    @apply text-3xl font-bold tracking-tight text-gray-800 md:leading-relaxed lg:text-4xl dark:text-gray-50;
+  }
+
+  /* Subheading */
+  h2 {
+    @apply text-2xl font-bold text-gray-800 capitalize lg:text-3xl dark:text-gray-50;
+  }
+  h3 {
+    @apply text-2xl font-semibold leading-relaxed tracking-tight text-gray-50;
+  }
+
+  h4 {
+    @apply text-xl font-semibold text-gray-800 lg:text-xl dark:text-gray-50;
+  }
+
+  /* Body */
+  p {
+    @apply text-base leading-relaxed tracking-tight text-gray-600 dark:text-gray-300;
+  }
+}
+
+@layer components {
+  .button-primary {
+    @apply w-full px-6 py-3 mt-8 font-medium text-center capitalize rounded-lg text-gray-50 bg-biru-400 hover:bg-biru-500 lg:mx-0 lg:w-auto;
+  }
+  .button-secondary {
+    @apply w-full px-6 py-3 mt-8 font-medium text-center capitalize rounded-lg bg-oren-400 text-gray-50 hover:bg-oren-500 hover:text-gray-50 lg:mx-0 lg:w-auto;
+  }
+}
